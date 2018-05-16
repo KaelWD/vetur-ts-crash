@@ -14,7 +14,13 @@ import HelloWorld from './components/HelloWorld.vue';
     HelloWorld,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  bar: boolean = false
+
+  foo (): string {
+    console.log(this.bar)
+  }
+}
 </script>
 
 <style>
